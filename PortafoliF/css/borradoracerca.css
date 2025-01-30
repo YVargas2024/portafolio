@@ -1,0 +1,351 @@
+/* Sección "Acerca de Mí" */
+
+#about {
+    background: linear-gradient( rgba(250, 248, 248, 0.7), rgba(253, 250, 250, 0.4)), url('./sobre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* Cambiado de column a row */
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    /* Separación del nav */
+    position: relative;
+}
+
+
+/* Información personal (izquierda) */
+
+.about-header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /* Coloca la imagen y el texto en fila */
+    align-items: center;
+    /* Centra verticalmente la imagen y el texto */
+}
+
+.about-header img {
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid var(--color-accent);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5), /* Resplandor tenue cercano */
+    0 0 10px rgba(0, 0, 0, 0.4), /* Resplandor más difuso */
+    0 0 15px rgba(0, 0, 0, 0.3);
+    /* Resplandor externo */
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Información adicional (derecha) */
+
+.about-content {
+    flex: 1 1 55%;
+    /* Ajusta para ocupar el 55% del espacio restante */
+    margin-left: 20px;
+    font-size: 1.1rem;
+    color: #000000;
+    /* Negro base para el texto */
+    line-height: 1.8;
+    text-align: left;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.1), /* Sombra negra más cercana */
+    0 0 6px rgba(0, 0, 0, 0.4), /* Resplandor tenue */
+    0 0 10px rgba(0, 0, 0, 0.3);
+    /* Neón negro más amplio */
+    transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+
+/* Tarjetas de educación */
+
+.educacion {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.tarjeta-educacion {
+    background-color: #ffffff;
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-educacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.estado-educacion-superior {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color2);
+}
+
+.estado-educacion-inferior {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.estado-educacion-superior.certificado {
+    color: #4CAF50;
+}
+
+.estado-educacion-superior.en-proceso {
+    color: #FF9800;
+}
+
+.estado-educacion-inferior.culminado {
+    color: #4CAF50;
+}
+
+.estado-educacion-inferior.en-proceso {
+    color: #FF9800;
+}
+
+
+/* Carrusel de habilidades técnicas */
+
+.carrusel-habilidades {
+    display: flex;
+    overflow: auto;
+    gap: 15px;
+    margin-top: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.carrusel-habilidades img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.carrusel-habilidades p {
+    text-align: center;
+    color: var(--color3);
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #about h2 {
+        font-size: 2rem;
+    }
+    .about-content p {
+        font-size: 0.9rem;
+    }
+    .about-header img {
+        width: 100px;
+        height: 100px;
+    }
+    .tarjeta-educacion {
+        width: 220px;
+    }
+    .carrusel-habilidades img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* Contenedor principal */
+
+.about-container {
+    background: linear-gradient( rgba(250, 248, 248, 0.7), rgba(253, 250, 250, 0.4)), url('./sobre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: 700px;
+    padding: 60px 20px;
+}
+
+
+/* Tarjeta de foto y descripción */
+
+.about-card {
+    position: relative;
+    flex: 1 1 40%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(250, 248, 248, 0.5), /* Resplandor tenue cercano */
+    0 0 10px rgba(250, 247, 247, 0.4), /* Resplandor más difuso */
+    0 0 15px rgba(248, 246, 246, 0.3);
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.about-photo img {
+    border-radius: 80%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid var(--color-accent);
+    box-shadow: 0 0 8px rgba(250, 248, 248, 0.5), /* Resplandor tenue cercano */
+    0 0 10px rgba(250, 247, 247, 0.4), /* Resplandor más difuso */
+    0 0 15px rgba(248, 246, 246, 0.3);
+    /* Resplandor externo */
+    transition: box-shadow 0.3s ease;
+}
+
+.about-info {
+    margin-top: 5px;
+}
+
+.about-info h2 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.about-info p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+
+/* Educación (carrusel) */
+
+.about-education {
+    flex: 1 1 55%;
+}
+
+.about-education h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color4);
+    margin-bottom: 3px;
+    margin-top: 20px;
+}
+
+.education-carousel {
+    max-height: 500px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(250, 248, 248, 0.5), /* Resplandor tenue cercano */
+    0 0 10px rgba(250, 247, 247, 0.4), /* Resplandor más difuso */
+    0 0 15px rgba(248, 246, 246, 0.3);
+    margin-bottom: 130px;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(253, 253, 253, 0.712);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#sena {
+    color: #fff;
+    background: #00af003f;
+}
+
+.education-info {
+    flex: 1;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.education-info h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.education-info p {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.education-info .status {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.education-info .status.certificado {
+    color: #4CAF50;
+}
+
+.education-info .status.en-proceso {
+    color: #FF9800;
+}
+
+.education-info .status.culminado {
+    color: #4CAF50;
+}
+
+.education-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.education-img img {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Scrollbar para carrusel */
+
+.education-carousel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.education-carousel::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.education-carousel::-webkit-scrollbar-thumb:hover {
+    background: var(--color4);
+}
