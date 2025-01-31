@@ -54,6 +54,7 @@
 }
 
 .about-info h2 {
+    padding: 20px;
     font-size: 1.6rem;
     color: #fff;
 }
@@ -73,11 +74,11 @@
 }
 
 .about-education h2 {
+    padding: 15px;
     text-align: center;
     font-size: 1.5rem;
     color: white;
     margin-bottom: 3px;
-    margin-top: 20px;
 }
 
 .education-carousel {

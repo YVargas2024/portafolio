@@ -28,24 +28,23 @@
 h2,
 .title2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--text-color);
-    margin-bottom: 20px;
 }
 
 
 /* Carrusel de proyectos */
 
 .projects-carousel {
+    display: flex;
     border-radius: 15px;
     background-color: var(--color2);
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
-    padding: 20px;
-    margin-top: 30px;
-    margin: 0 30px 50px;
+    padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 .project-card {

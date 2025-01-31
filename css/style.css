@@ -19,6 +19,10 @@
             --color4: #6b6b6b;
             --color5: #8f8f8f;
         }
+        
+        html {
+            scroll-behavior: smooth;
+        }
         /* Estilo general del header */
         
         header {

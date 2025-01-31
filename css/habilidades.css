@@ -17,34 +17,25 @@
 
 /* Estilos Globales */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
 
 /* Títulos */
 
 h2 {
+    padding-top: 120px;
+    margin-top: 50px;
     text-align: center;
     font-size: 2.5rem;
-    margin: 40px 0;
-    color: var(--primary-color);
+    margin: 0;
+    color: write;
 }
 
 
 /* Sección de Habilidades */
 
 #skills {
+    height: 90vh;
     padding: 40px 20px;
+    width: 100%;
 }
 
 .carrusel-habilidades {
@@ -55,6 +46,7 @@ h2 {
     padding-bottom: 20px;
     justify-content: center;
     align-items: center;
+    height: 300px;
 }
 
 .carrusel-habilidades div {
@@ -62,7 +54,7 @@ h2 {
     text-align: center;
     width: 120px;
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: #666;
     border-radius: var(--border-radius);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
