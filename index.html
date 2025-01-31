@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/acerca.css">
     <link rel="stylesheet" href="./css/proyecto.css">
+    <link rel="stylesheet" href="./css/habilidades.css">
 
     <title>Portafolio de Yulian Vargas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -156,80 +158,92 @@
                             <img src="./img/edu/dev.jpeg" alt="Logo Udemy" />
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección de Proyectos -->
-    <div id="projects-title">
-        <h2>Mis Proyectos</h2>
-
-        <section id="projects" class="projects-carousel">
-            <!-- Proyecto 1 -->
-            <div class="project-card">
-                <img src="./JavaScript_Logo.png" alt="Living Together">
-                <div class="status">Terminado</div>
-                <h3>Living Together</h3>
-                <p>Plataforma para encontrar compañeros de cuarto.</p>
-                <div class="buttons">
-                    <button onclick="window.open('https://living-together.com', '_blank')">Ver Proyecto</button>
-                    <button onclick="window.open('https://github.com/usuario/living-together', '_blank')">Ver Código</button>
-                    <button onclick="openModal('Living Together', 'Plataforma para encontrar compañeros de cuarto y ofrecer habitaciones en alquiler.')">Descripción</button>
-                </div>
-            </div>
-            <!-- Proyecto 2 -->
-            <div class="project-card">
-                <img src="project2.jpg" alt="E-Commerce App">
-                <div class="status in-process">En Proceso</div>
-                <h3>E-Commerce App</h3>
-                <p>Tienda online moderna y funcional.</p>
-                <div class="buttons">
-                    <button onclick="window.open('https://ecommerce-app.com', '_blank')">Ver Proyecto</button>
-                    <button onclick="window.open('https://github.com/usuario/ecommerce-app', '_blank')">Ver Código</button>
-                    <button onclick="openModal('E-Commerce App', 'Aplicación de comercio electrónico para vender productos con carrito y pasarela de pago.')">Descripción</button>
-                </div>
-            </div>
-            <!-- Proyecto 3 -->
-            <div class="project-card">
-                <img src="project3.jpg" alt="Blog Platform">
-                <div class="status in-process">En Proceso</div>
-                <h3>Blog Platform</h3>
-                <p>Plataforma para compartir artículos.</p>
-                <div class="buttons">
-                    <button onclick="window.open('https://blog-platform.com', '_blank')">Ver Proyecto</button>
-                    <button onclick="window.open('https://github.com/usuario/blog-platform', '_blank')">Ver Código</button>
-                    <button onclick="openModal('Blog Platform', 'Plataforma para crear y compartir artículos sobre temas variados.')">Descripción</button>
-                </div>
-            </div>
-            <!-- Proyecto 4 -->
-            <div class="project-card">
-                <img src="project4.jpg" alt="Portfolio Website">
-                <div class="status">Terminado</div>
-                <h3>Portfolio Website</h3>
-                <p>Mi portafolio profesional.</p>
-                <div class="buttons">
-                    <button onclick="window.open('https://portfolio.com', '_blank')">Ver Proyecto</button>
-                    <button onclick="window.open('https://github.com/usuario/portfolio', '_blank')">Ver Código</button>
-                    <button onclick="openModal('Portfolio Website', 'Mi portafolio para mostrar mis habilidades y proyectos.')">Descripción</button>
-                </div>
-            </div>
-            <!-- Proyecto 5 -->
-            <div class="project-card">
-                <img src="project5.jpg" alt="Weather App">
-                <div class="status">Terminado</div>
-                <h3>Weather App</h3>
-                <p>Consulta el clima en tiempo real.</p>
-                <div class="buttons">
-                    <button onclick="window.open('https://weather-app.com', '_blank')">Ver Proyecto</button>
-                    <button onclick="window.open('https://github.com/usuario/weather-app', '_blank')">Ver Código</button>
-                    <button onclick="openModal('Weather App', 'Aplicación para consultar el clima en tiempo real usando APIs.')">Descripción</button>
-                </div>
-            </div>
-        </section>
+    <div class="title" id="title2">
+        <h2 class="title2">Mis Proyectos</h2>
     </div>
+    <section id="projects" class="projects-carousel">
+        <!-- Proyecto 1 -->
+        <div class="project-card project-living-together">
+            <h3 class="living">Living Together <span class="status-label completed">Terminado</span></h3>
+            <img src="./img/projecs/repo1.png" alt="Living Together">
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">Mysql</span>
+            </div>
+            <div class="buttons">
+                <button onclick="window.open('https://yvargas2024.github.io/LivingTogether/', '_blank')">Ver Proyecto</button>
+                <button onclick="window.open('https://github.com/YVargas2024/LivingTogether', '_blank')">Ver Código</button>
+                <button onclick="openModal('Living Together', 'Plataforma para encontrar compañeros de cuarto y ofrecer habitaciones en alquiler.')">Descripción</button>
+            </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="project-card project-reto-fit">
+            <h3>Reto Fit <span class="status-label completed">Terminado</span></h3>
+            <img src="./img/projecs/retofit.png" alt="E-Commerce App">
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Boostrap</span>
+            </div>
+            <div class="buttons">
+                <button onclick="window.open('https://ecommerce-app.com', '_blank')">Ver Proyecto</button>
+                <button onclick="window.open('https://github.com/usuario/ecommerce-app', '_blank')">Ver Código</button>
+                <button onclick="openModal('E-Commerce App', 'Aplicación de comercio electrónico para vender productos con carrito y pasarela de pago.')">Descripción</button>
+            </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="project-card project-patu-salud">
+            <h3>Patu Salud <span class="status-label in-process">En Proceso</span></h3>
+            <img src="/img/projecs/patu.png" alt="Blog Platform">
+            <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Java</span>
+                <span class="tag">Mysql</span>
+            </div>
+            <div class="buttons">
+                <button onclick="window.open('https://blog-platform.com', '_blank')">Ver Proyecto</button>
+                <button onclick="window.open('https://github.com/usuario/blog-platform', '_blank')">Ver Código</button>
+                <button onclick="openModal('Blog Platform', 'Plataforma para crear y compartir artículos sobre temas variados.')">Descripción</button>
+            </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card project-arigreen">
+            <h3>AriGreen <span class="status-label iniciando">Iniciando</span></h3>
+            <img src="/img/projecs/arigreen.webp" alt="Portfolio Website">
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">React</span>
+                <span class="tag">Next</span>
+                <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="buttons">
+                <button onclick="window.open('https://portfolio.com', '_blank')">Ver Proyecto</button>
+                <button onclick="window.open('https://github.com/usuario/portfolio', '_blank')">Ver Código</button>
+                <button onclick="openModal('AriGreen', 'La app AriGreen busca revolucionar el reciclaje al ofrecer una plataforma interactiva que no solo motiva, sino que educa y facilita el proceso a los usuarios. A través de diversas funcionalidades, se fomenta la participación activa y se contribuye a un entorno más sostenible.')">Descripción</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
     <!-- Sección de Habilidades -->
     <section id="skills">
         <h2>Habilidades Técnicas</h2>
@@ -320,9 +334,25 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Yulian Vargas. Todos los derechos reservados.</p>
-        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a>
-        <a href="https://github.com/[TuNombre]" target="_blank">GitHub</a>
+        <div class="social-icons">
+            <div class="whatsapp">
+                <a href="https://wa.me/123456789" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="github">
+                <a href="https://github.com/[TuNombre]" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
     </footer>
+
 
     <script>
         // Función para manejar el envío del formulario de contacto
