@@ -1,125 +1,195 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        body {
-            background-color: #000000;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-        /* Paleta de colores */
-        
-         :root {
-            --color1: #000000;
-            --color2: #242424;
-            --color3: #484848;
-            --color4: #6b6b6b;
-            --color5: #8f8f8f;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Estilo general del header */
-        
-        header {
-            position: fixed;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #000000;
-            border: 1px solid #8f8f8f;
-            border-radius: 20px;
-            padding: 10px 20px;
-            height: 80px;
-            width: 93%;
-            z-index: 8000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        /* Contenedor del nombre y logotipo */
-        
-        .nav-name {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        /* Estilo del logotipo */
-        
-        .nav-logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            /* Ajusta la imagen al tamaño del contenedor */
-            border: 2px solid #ccc;
-            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
-        }
-        
-        #logo {
-            padding: 5px;
-            /* Ajusta la imagen al tamaño del contenedor */
-        }
-        /* Estilo del nombre */
-        
-        .nav-name span {
-            font-family: 'Tangerine', cursive;
-            font-size: 2.5rem;
-            color: #ffffff;
-            /* Texto blanco base */
-            text-shadow: 0 0 2px #ffffff, /* Sombra sutil */
-            0 0 4px #ffffff, /* Brillo suave */
-            0 0 6px #ffffff, /* Resplandor ligero */
-            0 0 8px #ffffff;
-            /* Toque sutil de neón */
-        }
-        /* Estilo del nav */
-        
-        nav ul {
-            display: flex;
-            gap: 5px;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav li {
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-        }
-        
-        nav a:hover {
-            border-radius: 15px;
-            transform: scale(1.2);
-            background-color: var(--color5);
-            color: #ffffff;
-            font-size: 16px;
-        }
-        /* Resaltar el enlace activo */
-        
-        nav a.active {
-            border-radius: 15px;
-            background-color: white;
-            /* Color de fondo del enlace activo */
-            color: black;
-        }
-        /* Añadir un selector adicional para el nav */
-        
-        nav {
-            transition: transform 0.3s ease;
-        }
-        
-        nav a.active:hover {
-            transform: scale(1.2);
-            background-color: var(--color5);
-            color: #ffffff;
-        }
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+:root {
+    --color1: #000000;
+    --color2: #242424;
+    --color3: #484848;
+    --color4: #6b6b6b;
+    --color5: #8f8f8f;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    border: 1px solid #8f8f8f;
+    border-radius: 20px;
+    padding: 10px 20px;
+    height: 80px;
+    width: 93%;
+    z-index: 8000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contenedor del nombre y logo */
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* Logotipo */
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.6);
+}
+
+#logo {
+    padding: 5px;
+}
+
+.nav-name span {
+    font-family: 'Tangerine', cursive;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 6px #ffffff, 0 0 8px #ffffff;
+}
+
+nav ul {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    border-radius: 15px;
+    transform: scale(1.2);
+    background-color: var(--color5);
+    color: #ffffff;
+    font-size: 16px;
+}
+
+nav a.active {
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+}
+
+nav {
+    transition: transform 0.3s ease;
+}
+
+
+/* Menú hamburguesa */
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+
+
+/* Media Queries para responsive design */
+
+
+/* Para pantallas más pequeñas que 768px (tabletas y móviles) */
+
+@media (max-width: 768px) {
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    header {
+        flex-direction: column;
+        padding: 15px 10px;
+        height: auto;
+    }
+    .nav-name {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .nav-name span {
+        font-size: 2rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        /* Inicialmente ocultamos el menú */
+        width: 100%;
+        margin-top: 20px;
+    }
+    nav li {
+        font-size: 12px;
+    }
+    nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    /* Mostrar el ícono de menú */
+    .menu-icon {
+        display: flex;
+    }
+}
+
+
+/* Mostrar menú cuando se activa el menú hamburguesa */
+
+.navbar-active ul {
+    display: flex;
+    /* Hacer visible el menú */
+    animation: slide-in 0.3s ease;
+}
+
+
+/* Animación para el menú */
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

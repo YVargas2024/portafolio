@@ -71,3 +71,60 @@
     letter-spacing: 1px;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
+
+
+/* --- Media Queries para Pantallas más pequeñas --- */
+
+
+/* Para pantallas más pequeñas que 768px (tabletas y móviles) */
+
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.8rem;
+        /* Reducir tamaño de fuente en pantallas medianas */
+    }
+    #home p {
+        font-size: 1.5rem;
+        /* Reducir tamaño de fuente en párrafos */
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        /* Ajustar tamaño de la imagen de perfil en pantallas medianas */
+    }
+    .slogan {
+        font-size: 1.2rem;
+        /* Reducir tamaño de la fuente del slogan */
+    }
+    #home {
+        padding-top: 80px;
+        /* Ajustar padding superior en pantallas medianas */
+    }
+}
+
+
+/* Para pantallas más pequeñas que 480px (móviles) */
+
+@media (max-width: 480px) {
+    #home h1 {
+        font-size: 2.2rem;
+        /* Reducir aún más el tamaño de fuente del título */
+    }
+    #home p {
+        font-size: 1.2rem;
+        /* Reducir aún más el tamaño de fuente de los párrafos */
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        /* Ajustar aún más el tamaño de la imagen de perfil */
+    }
+    .slogan {
+        font-size: 1rem;
+        /* Reducir aún más el tamaño del slogan */
+    }
+    #home {
+        padding-top: 60px;
+        /* Ajustar padding superior en móviles */
+    }
+}

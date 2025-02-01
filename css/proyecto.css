@@ -5,21 +5,13 @@
     --color4: #6b6b6b;
     --color5: #8f8f8f;
     --primary-color: #007bff;
-    /* Azul principal */
     --hover-color: #0056b3;
-    /* Azul oscuro */
     --secondary-color: #ffa500;
-    /* Naranja */
     --background-color: #222;
-    /* Fondo oscuro */
     --text-color: #fff;
-    /* Texto blanco */
     --subtext-color: #666;
-    /* Texto secundario */
     --tag-color: #647E92;
-    /* Azul suave para las etiquetas */
     --tag-hover-color: #3e5f72;
-    /* Azul más oscuro para hover en etiquetas */
 }
 
 
@@ -39,7 +31,6 @@ h2,
     display: flex;
     border-radius: 15px;
     background-color: var(--color2);
-    display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
@@ -157,12 +148,10 @@ h2,
 
 .project-card .status-label.in-process {
     background-color: var(--secondary-color);
-    /* Naranja */
 }
 
 .project-card .status-label.iniciando {
     background-color: #007bff;
-    /* Naranja */
 }
 
 
@@ -170,7 +159,6 @@ h2,
 
 .project-card .status-label.completed {
     background-color: #28a745;
-    /* Verde */
 }
 
 
@@ -220,4 +208,93 @@ h2,
 
 .modal-content button:hover {
     background-color: var(--hover-color);
+}
+
+
+/* Media Queries para responsive design */
+
+
+/* Para pantallas más pequeñas que 768px (tabletas y móviles) */
+
+@media (max-width: 768px) {
+    h2,
+    .title2 {
+        font-size: 3rem;
+        /* Reducir el tamaño de fuente de los títulos */
+    }
+    .projects-carousel {
+        flex-direction: column;
+        padding-top: 50px;
+        /* Ajustar el padding superior */
+        gap: 20px;
+        /* Añadir un gap entre las tarjetas */
+    }
+    .project-card {
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+        /* Centrar las tarjetas y añadir un margen inferior */
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .project-card h3 {
+        font-size: 1rem;
+        /* Reducir el tamaño de la fuente del título */
+    }
+    .project-card p {
+        font-size: 0.8rem;
+        /* Reducir el tamaño de la fuente del texto */
+    }
+    .project-card .tags .tag {
+        font-size: 0.8rem;
+        /* Reducir el tamaño de las etiquetas */
+    }
+    .modal-content {
+        width: 80%;
+        /* Hacer el modal más pequeño en pantallas pequeñas */
+    }
+}
+
+
+/* Para pantallas más pequeñas que 480px (móviles) */
+
+@media (max-width: 480px) {
+    h2,
+    .title2 {
+        font-size: 2.5rem;
+        /* Reducir aún más el tamaño de los títulos */
+    }
+    .projects-carousel {
+        padding-top: 30px;
+        gap: 15px;
+        /* Ajustar el espacio entre las tarjetas */
+    }
+    .project-card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        /* Centrar las tarjetas con margen ajustado */
+    }
+    .buttons button {
+        font-size: 0.6rem;
+        padding: 8px;
+    }
+    .project-card h3 {
+        font-size: 0.9rem;
+    }
+    .project-card p {
+        font-size: 0.7rem;
+    }
+    .project-card .tags .tag {
+        font-size: 0.7rem;
+    }
+    .modal-content {
+        width: 90%;
+    }
 }
