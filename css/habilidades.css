@@ -78,11 +78,49 @@ h2 {
 
 /* Sección de Contacto */
 
+
+/* Estilos para el mensaje de agradecimiento */
+
+#thank-you-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    max-width: 90%;
+    width: 400px;
+}
+
+
+/* Estilo para la imagen dentro del mensaje */
+
+#thank-you-message img {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+
+/* Estilos para el formulario de contacto */
+
 #contact {
     padding: 40px 20px;
     background-color: #333;
     border-radius: var(--border-radius);
     margin-top: 40px;
+    color: white;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 #contact form {
@@ -106,7 +144,7 @@ h2 {
 #contact button {
     padding: 12px;
     font-size: 1.1rem;
-    background-color: var(--primary-color);
+    background-color: black;
     color: var(--text-color);
     border: none;
     border-radius: var(--border-radius);
@@ -115,7 +153,8 @@ h2 {
 }
 
 #contact button:hover {
-    background-color: var(--hover-color);
+    background-color: white;
+    color: black;
 }
 
 

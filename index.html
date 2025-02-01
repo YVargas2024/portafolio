@@ -324,39 +324,43 @@
         </div>
 
     </div>
-    <!-- Contacto -->
     <section id="contact">
         <h2>Contacto</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Tu Nombre" required>
-            <input type="email" id="email" placeholder="Tu Correo" required>
-            <textarea id="message" placeholder="Tu mensaje..." required></textarea>
+        <form id="contact-form" action="https://formspree.io/f/mjkgrope" method="POST">
+            <input type="text" name="name" id="name" placeholder="Tu Nombre" required>
+            <input type="email" name="email" id="email" placeholder="Tu Correo" required>
+            <textarea id="message" name="message" placeholder="Tu mensaje..." required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
+    <!-- Mensaje de agradecimiento con GIF -->
+    <div id="thank-you-message" style="display:none;">
+        <img src="" alt="Gracias"> ¡Gracias por tu mensaje! Te responderé pronto.
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Yulian Vargas. Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <div class="whatsapp">
-                <a href="https://wa.me/3102473482" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
+        <div class="social-icons ">
+            <div class="whatsapp ">
+                <a href="https://wa.me/3102473482 " target="_blank ">
+                    <i class="fab fa-whatsapp "></i>
                 </a>
             </div>
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/yulian-ferney-vargas-motta-desarrollador-full-stack/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+            <div class="linkedin ">
+                <a href="https://www.linkedin.com/in/yulian-ferney-vargas-motta-desarrollador-full-stack/ " target="_blank ">
+                    <i class="fab fa-linkedin "></i>
                 </a>
             </div>
-            <div class="github">
-                <a href="https://github.com/YVargas2024" target="_blank">
-                    <i class="fab fa-github"></i>
+            <div class="github ">
+                <a href="https://github.com/YVargas2024 " target="_blank ">
+                    <i class="fab fa-github "></i>
                 </a>
             </div>
         </div>
     </footer>
-    <script src="./js/scrips.js"></script>
+    <script src="./js/scrips.js "></script>
 </body>
 
 </html>
